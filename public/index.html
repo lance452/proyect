@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Panel de Administración</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="sidebar">
+    <div class="user-profile">
+      <img src="53263-yuta-sit.ico" alt="User Image">
+    </div>
+    <ul>
+      <li><a href="#" onclick="showForm()">Formulario</a></li>
+      <li><a href="#" onclick="showTable()">Tabla</a></li>
+      <li><a href="#">Salir</a></li>
+    </ul>
+  </div>
+
+  <div class="content">
+    <div id="form-container" style="display:none;">
+      <h2>Formulario de Registro</h2>
+      <form borde="2" id="data-form">
+        <label for="nombre">Nombre:</label><br>
+        <input type="text" id="nombre" name="nombre" required><br>
+        <label for="email">Correo electrónico:</label><br>
+        <input type="email" id="email" name="email" required><br>
+        <label for="direccion">Direccion</label><br>
+        <input type="text" id="direccion" name="direccion" required><br>
+        <label for="numero">Numero de telefono</label><br>
+        <input type="number" id="numero" name="numero" required><br>
+        <label for="edad">Edad</label><br>
+        <input type="number" id="edad" name="edad" required> <br>
+        <button type="submit">Enviar</button>
+      </form>
+    </div>
+    <div id="table-container" style="display:none;">
+      <h2>Tabla de Datos</h2>
+      <table id="data-table">
+        <thead>
+          <tr>
+            <th>Nombre</th>
+            <th>Correo Electrónico</th>
+            <th>Direccion</th>
+            <th>Numero de telefono</th>
+            <th>Edad</th>
+          </tr>
+        </thead>
+        <tbody>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
